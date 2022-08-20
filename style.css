@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #9a7fbe;
+    color: white;
+  }
+  
+  main {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .Altura, .Peso, .Calc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #441088;
+    color: white;
+  }
+  
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 1%;
+}
+
+.footer p {
+    text-align: center;
+    margin: 0 auto;
+}
+  @media (max-width: 500px) {
+    body, input, button {
+      font-size: 15px;
+    }
+}
+footer a {
+  text-decoration: none;
+  color: #0A3871;
+}
+.redes-sociais a img {
+  filter: invert(45%);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 4px;
+}
+footer {
+  display: flex;
+   position: absolute; 
+  flex-direction: column;
+  text-align: center;    
+  font-size: 18px;
+  color: #0A3871;
+  height: 3.5rem; 
+  width: 100%; 
+  bottom: 0px;
+}
